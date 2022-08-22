@@ -2,18 +2,18 @@ package PalindromeProgram;
 
 import java.util.Scanner;
 
-/*Palindrom Sayı Nedir ?
-Palindromik sayı, iki taraftan okunduğu zaman okunuş yönüyle aynı olan sayılardır.
+/*Palindrom Sayi Nedir ?
+Palindromik sayi, iki taraftan okundugu zaman okunus yÃ¶nÃ¼yle ayni olan sayilardir.
 
-Örnek: 1, 4, 8, 99, 101, 363, 4004, 9889....*/
+Ã–rnek: 1, 4, 8, 99, 101, 363, 4004, 9889....*/
 
-/*        Palindrome Algoritması
-  1.Palindrome olup olmadığını belirlenecek sayıyı kullanıcıdan alın.
-  2.Sayıyı geçiçi bir değişkende tutun.
-  3.Sayıyı ters çevirin.
-  4.Ters çevrilmiş sayı ile geçici değişkende tutulmuş sayıyı kıyaslayın.
-  5.Sayılar birbirine eşitse "palindrome sayıdır".
-  6.Değilse "palindrome sayı değildir."  */
+/*        Palindrome Algoritmasi
+  1.Palindrome olup oladigini belirlenecek sayiyi kullanicidan alin.
+  2.Sayiyi geÃ§iÃ§i bir degiskende tutun.
+  3.Sayiyi ters Ã§evirin.
+  4.Ters Ã§evrilmis sayi ile geÃ§ici degiskende tutulmus sayiyi kiyaslayin.
+  5.Sayilar birbirine esitese "palindrome sayidir".
+  6.Degilse "palindrome sayi degildir."  */
 
 public class PalindromeProgram {
 
