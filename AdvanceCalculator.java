@@ -2,8 +2,8 @@ package AdvanceCalculator;
 
 import java.util.Scanner;
 
-/*Ödev
-Ayný projeye mod almak ve dikdörtgen alan çevre hesabýný yapan metotlarý yazýp menüde iþlevsel hale getiriniz.*/
+/*Ã–dev
+Ayni projeye mod almak ve dikdÃ¶rtgen alan Ã§evre hesabini yapan metotlari yazip menÃ¼de islevsel hale getiriniz.*/
 
 public class AdvanceCalculator {
 
@@ -11,24 +11,24 @@ public class AdvanceCalculator {
 		Scanner scan = new Scanner(System.in);
 		int number, result = 0, i = 1;
 		while (true) {
-			System.out.print(i++ + ". sayý :");
+			System.out.print(i++ + ". sayÃ½ :");
 			number = scan.nextInt();
 			if (number == 0) {
 				break;
 			}
 			result += number;
 		}
-		System.out.println("Sonuç : " + result);
+		System.out.println("SonuÃ§ : " + result);
 	}
 
 	static void minus() {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Kaç adet sayý gireceksiniz :");
+		System.out.print("KaÃ§ adet sayÄ± gireceksiniz :");
 		int counter = scan.nextInt();
 		int number, result = 0;
 
 		for (int i = 1; i <= counter; i++) {
-			System.out.print(i + ". sayý :");
+			System.out.print(i + ". sayÃ½ :");
 			number = scan.nextInt();
 			if (i == 1) {
 				result += number;
@@ -37,7 +37,7 @@ public class AdvanceCalculator {
 			result -= number;
 		}
 
-		System.out.println("Sonuç : " + result);
+		System.out.println("SonuÃ§ : " + result);
 	}
 
 	static void times() {
@@ -45,7 +45,7 @@ public class AdvanceCalculator {
 		int number, result = 1, i = 1;
 
 		while (true) {
-			System.out.print(i++ + ". sayý :");
+			System.out.print(i++ + ". sayi :");
 			number = scan.nextInt();
 
 			if (number == 1)
@@ -58,20 +58,20 @@ public class AdvanceCalculator {
 			result *= number;
 		}
 
-		System.out.println("Sonuç : " + result);
+		System.out.println("SonuÃ§ : " + result);
 	}
 
 	static void divided() {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Kaç adet sayý gireceksiniz :");
+		System.out.print("KaÃ§ adet sayi gireceksiniz :");
 		int counter = scan.nextInt();
 		double number, result = 0.0;
 
 		for (int i = 1; i <= counter; i++) {
-			System.out.print(i + ". sayý :");
+			System.out.print(i + ". sayÃ½ :");
 			number = scan.nextDouble();
 			if (i != 1 && number == 0) {
-				System.out.println("Böleni 0 giremezsiniz.");
+				System.out.println("BÃ¶leni 0 giremezsiniz.");
 				continue;
 			}
 			if (i == 1) {
@@ -81,14 +81,14 @@ public class AdvanceCalculator {
 			result /= number;
 		}
 
-		System.out.println("Sonuç : " + result);
+		System.out.println("SonuÃ§ : " + result);
 	}
 
 	static void power() {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Taban deðeri giriniz :");
+		System.out.print("Taban deÄŸeri giriniz :");
 		int base = scan.nextInt();
-		System.out.print("Üs deðeri giriniz :");
+		System.out.print("Ãœs deÃ°eri giriniz :");
 		int exponent = scan.nextInt();
 		int result = 1;
 
@@ -96,12 +96,12 @@ public class AdvanceCalculator {
 			result *= base;
 		}
 
-		System.out.println("Sonuç : " + result);
+		System.out.println("SonuÃ§ : " + result);
 	}
 
 	static void factorial() {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Sayý giriniz :");
+		System.out.print("SayÄ± giriniz :");
 		int n = scan.nextInt();
 		int result = 1;
 
@@ -109,45 +109,45 @@ public class AdvanceCalculator {
 			result *= i;
 		}
 
-		System.out.println("Sonuç : " + result);
+		System.out.println("SonuÃ§ : " + result);
 	}
 	
 	static void mode() 
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Birinci sayýyý giriniz : ");
+		System.out.println("Birinci sayÄ±yÄ± giriniz : ");
 		int num1 = sc.nextInt();
-		System.out.println("Ýkinci sayýyý giriniz : ");
+		System.out.println("Ãkinci sayÄ±yÄ± giriniz : ");
 		int num2 = sc.nextInt();
 		int result = num1 % num2;
-		System.out.println("Sonuç: " + result);
+		System.out.println("SonuÃ§: " + result);
 		
 	}
 	
 	static void rectangular() 
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Kýsa kenarý giriniz: ");
-		int kýsaKenar = sc.nextInt();
-		System.out.println("Uzun kenarý giriniz: ");
+		System.out.println("KÃ½sa kenarÃ½ giriniz: ");
+		int kÃ½saKenar = sc.nextInt();
+		System.out.println("Uzun kenarÃ½ giriniz: ");
 		int uzunKenar = sc.nextInt();
-		int cevre = (kýsaKenar * 2) + (uzunKenar * 2);
-		int alan = kýsaKenar * uzunKenar;
-		System.out.println("Dikdörtgenin çevresi: " + cevre);
-		System.out.println("Dikdötgenin alaný: " + alan);
+		int cevre = (kÃ½saKenar * 2) + (uzunKenar * 2);
+		int alan = kÃ½saKenar * uzunKenar;
+		System.out.println("DikdÃ¶rtgenin Ã§evresi: " + cevre);
+		System.out.println("DikdÃ¶tgenin alani: " + alan);
 		
 	}
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int select;
-		String menu = "1- Toplama Ýþlemi\n" + "2- Çýkarma Ýþlemi\n" + "3- Çarpma Ýþlemi\n" + "4- Bölme iþlemi\n"
-				+ "5- Üslü Sayý Hesaplama\n" + "6- Faktoriyel Hesaplama\n" + "7- Mod Alma\n"
-				+ "8- Dikdörtgen Alan ve Çevre Hesabý\n" + "0- Çýkýþ Yap";
+		String menu = "1- Toplama islemi\n" + "2- Ã‡ikarma islemi\n" + "3- Ã‡arpma islemi\n" + "4- BÃ¶lme islemi\n"
+				+ "5- ÃœslÃ¼ Sayi Hesaplama\n" + "6- Faktoriyel Hesaplama\n" + "7- Mod Alma\n"
+				+ "8- DikdÃ¶rtgen Alan ve Ã‡evre Hesabi\n" + "0- Cikis Yap";
 
 		do {
 			System.out.println(menu);
-			System.out.print("Lütfen bir iþlem seçiniz :");
+			System.out.print("LÃ¼tfen bir iÃ¾lem seÃ§iniz :");
 			select = scan.nextInt();
 			switch (select) {
 			case 1:
@@ -177,7 +177,7 @@ public class AdvanceCalculator {
 			case 0:
 				break;
 			default:
-				System.out.println("Yanlýþ bir deðer girdiniz, tekrar deneyiniz.");
+				System.out.println("Yanlis bir deÃ°er girdiniz, tekrar deneyiniz.");
 			}
 		} while (select != 0);
 
